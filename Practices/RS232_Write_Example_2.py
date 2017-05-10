@@ -16,8 +16,7 @@ serial_rs232 = serial.Serial(
 
 while serial_rs232.isOpen():
     try:
-        print(1)
-        serial_rs232.write(exit_command.encode())
+        serial_rs232.write(help_command.encode())
         break
 
     except KeyboardInterrupt:

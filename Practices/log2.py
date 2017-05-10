@@ -14,4 +14,4 @@ aformat = logging.Formatter('%(asctime)s - %(name)s - [%(levelname)s] - %(messag
 console.setFormatter(aformat)
 
 logger.addHandler(console)
-logger.info('Protocol problem:', extra=d)
+logger.warning('Protocol problem:', extra=d)
